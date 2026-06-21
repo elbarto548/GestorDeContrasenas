@@ -12,6 +12,12 @@ Aplicación de escritorio nativa para gestionar contraseñas de forma segura con
 
 ## Instalación
 
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/elbarto548/GestorDeContrasenas.git
+cd GestorDeContrasenas
+```
+
 ### Requisitos
 - Python 3.7 o superior
 
@@ -22,15 +28,18 @@ pip install cryptography pyperclip
 
 ## Uso
 
-### Opción 1: Ejecutable (Recomendado)
-1. Ve a `dist/`
-2. Doble clic en `GestorContrasenas.exe`
-3. Ingresa tu contraseña maestra
-
-### Opción 2: Python
+### Ejecutar la aplicación
 ```bash
 python password_desktop.py
 ```
+
+### Opcional: Crear ejecutable .exe
+Si prefieres un ejecutable en lugar de ejecutar con Python:
+```bash
+pip install pyinstaller
+pyinstaller GestorContrasenas.spec
+```
+El ejecutable estará en `dist/GestorContrasenas.exe`
 
 ### Primer uso
 1. Ejecuta la aplicación
